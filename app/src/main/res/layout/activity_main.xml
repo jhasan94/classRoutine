@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ProgressBar
+            android:id="@+id/progressBarId"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="end"
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+    android:id="@+id/etEmailId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="email"
+    android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPasswordId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnSignUpId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sign up" />
+    <Button
+        android:id="@+id/btnLogInId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="log In"/>
+
+
+    <Button
+        android:id="@+id/btnForgetPassId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forget Password" />
+
+
+</LinearLayout>
