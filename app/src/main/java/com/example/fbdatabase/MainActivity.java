@@ -20,13 +20,16 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    Toolbar toolbar;
-    ProgressBar progressBar;
-    EditText email;
-    EditText password;
-    Button signUp;
-    Button logIn;
-    Button forgetPass;
+    private Toolbar toolbar;
+    private ProgressBar progressBar;
+    private EditText email;
+    private EditText password;
+    private EditText busName;
+    private EditText seatCapacity;
+    private EditText stopage;
+    private Button signUp;
+    private Button logIn;
+    private Button forgetPass;
 
     FirebaseAuth firebaseAuth;
 
@@ -41,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
         signUp = findViewById(R.id.btnSignUpId);
         logIn = findViewById(R.id.btnLogInId);
         forgetPass = findViewById(R.id.btnForgetPassId);
+        busName = findViewById(R.id.busNameId);
+        seatCapacity = findViewById(R.id.seatCapacityId);
+        stopage = findViewById(R.id.stopage);
 
 
         toolbar.setTitle(R.string.app_name);
@@ -86,10 +92,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,login.class));
+                //finish();
             }
         });
         forgetPass.setOnClickListener(new View.OnClickListener() {
@@ -99,6 +107,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+       // finish();
     }
 }

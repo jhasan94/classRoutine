@@ -20,11 +20,11 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class login extends AppCompatActivity {
 
-    Toolbar toolbar;
-    ProgressBar progressBar;
-    EditText uEmail;
-    EditText uPassword;
-    Button signIn;
+    private Toolbar toolbar;
+    private ProgressBar progressBar;
+    private EditText uEmail;
+    private EditText uPassword;
+    private Button signIn;
 
 
     FirebaseAuth firebaseAuth;
@@ -57,6 +57,7 @@ public class login extends AppCompatActivity {
                         if (task.isSuccessful()){
                             if (firebaseAuth.getCurrentUser().isEmailVerified()) {
                                 startActivity(new Intent(login.this,profile.class));
+                                //finish();
                             }else {
                                 Toast.makeText(login.this,"please verify ur email",Toast.LENGTH_LONG).show();
                             }

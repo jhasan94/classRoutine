@@ -14,10 +14,26 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
-        android:textColor="#F44336"
+        android:textColor="#4CAF50"
         android:textSize="30sp"
 
         />
+    <Button
+        android:id="@+id/tonsuId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:text="to nsu" />
+    <Button
+        android:id="@+id/fromnsuId"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="From nsu" />
 
     <Button
         android:id="@+id/btnSignOut"

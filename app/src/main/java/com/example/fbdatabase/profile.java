@@ -28,7 +28,7 @@ public class profile extends AppCompatActivity {
         firebaseUser=firebaseAuth.getCurrentUser();
 
         showEmail.setText(firebaseUser.getEmail());
-        signOut.setOnClickListener(new View.OnClickListener() {
+        /*signOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
@@ -38,11 +38,17 @@ public class profile extends AppCompatActivity {
 
                 startActivity(intent);
 
+
             }
-        });
+        });*/
 
 
 
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
     }
 }

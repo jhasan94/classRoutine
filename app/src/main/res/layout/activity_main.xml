@@ -42,6 +42,27 @@
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/busNameId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/seatCapacityId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <MultiAutoCompleteTextView
+
+        android:id="@+id/stopage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="select stopage" />
 
     <Button
         android:id="@+id/btnSignUpId"
